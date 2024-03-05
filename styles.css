@@ -1,14 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700;800&display=swap');
+
 :root {
     --color-primary: #123456;
     --color-secondary: #FFF;
     --azul-royal: #144480;
     --fundo-card-timer: rgba(20, 68, 128, 0.30);
     --lils: #B872FF;
-    --linear-botes: linear-gradient(180deg, #B872FF 0%, #144480 100%);
+    --linear-botes:  #4f0141;
 }
 
+
 [data-contexto="foco"] {
-    --main-bg-color: linear-gradient(180deg, #8B1FF8 0%, #041832 48.44%, #01080E 100%);
+    /* --main-bg-color: linear-gradient(180deg, #8B1FF8 0%, #041832 48.44%, #01080E 100%); */
+    --main-bg-color:#4f0141;
 }
 
 [data-contexto="descanso-curto"] {
@@ -32,13 +36,13 @@ html {
 
 body {
     min-height: 100vh;
-    background: url("/imagens/pattern.png");
+    /* background: url("/imagens/pattern.png"); */
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Unbounded', cursive;
+    font-family: "Poppins", cursive;
 }
 
 .app__logo-figure {
@@ -77,8 +81,8 @@ h1, h2, h3, h4, h5, h6 {
 
 .app__card {
     border-radius: 3.2rem;
-    border: 0.2rem solid var(--azul-royal);
-    background: var(--fundo-card-timer);
+    /* border: 0.2rem solid var(--azul-royal); */
+    background: #fff;
     padding: 2.4rem;
     margin: 8rem 0;
     width: 59rem;
@@ -96,14 +100,14 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .app__card-button {
-    font-family: Montserrat;
+    font-family: "Poppins";
     font-size: 1.8rem;
     font-style: normal;
     font-weight: 400;
     line-height: 150%;
     background: none;
     padding: 0.8rem;
-    color: var(--color-secondary);
+    color:#000000;
     border: none;
     cursor: pointer;
     outline: inherit;
@@ -111,14 +115,14 @@ h1, h2, h3, h4, h5, h6 {
 
 .app__card-button.active {
     border-radius: 0.8rem;
-    background: var(--azul-royal);
+    background: #d5c2f0;
     font-weight: 600;
 }
 
 .app__card-timer {
     color: var(--color-secondary);
     text-align: center;
-    font-family: Unbounded;
+    font-family: "Poppins";
     font-size: 12rem;
     font-style: normal;
     font-weight: 700;
@@ -128,8 +132,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .app__card-list-label {
-    color: var(--color-secondary);
-    font-family: Montserrat;
+    color: #000000;
+    font-family: "Poppins";
     font-size: 1.8rem;
     font-style: normal;
     font-weight: 400;
@@ -139,6 +143,11 @@ h1, h2, h3, h4, h5, h6 {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.app__card-primary-button span{
+    
+    font-family: "Poppins";
 }
 
 .app__card-primary-button {
@@ -170,7 +179,7 @@ h1, h2, h3, h4, h5, h6 {
 .app__footer-text {
     color: rgba(182, 182, 182, 0.8);
     text-align: center;
-    font-family: Montserrat;
+    font-family: "Poppins";
     font-size: 1.5rem;
     font-style: normal;
     font-weight: 400;
@@ -185,7 +194,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .toggle-switch {
     display: inline-block;
-    background: #ccc;
+    background: #000000;
     border-radius: 1.6rem;
     width: 5.8rem;
     height: 3.2rem;
@@ -200,7 +209,8 @@ h1, h2, h3, h4, h5, h6 {
 
 .toggle-switch:before {
     display: block;
-    background: linear-gradient(to bottom, #fff 0%, #eee 100%);
+    /* background: linear-gradient(to bottom, #fff 0%, #eee 100%); */
+    background:#fff;
     border-radius: 50%;
     width: 2.4rem;
     height: 2.4rem;
@@ -211,11 +221,13 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .toggle:hover .toggle-switch:before {
-    background: linear-gradient(to bottom, #fff 0%, #fff 100%);
+    /* background: linear-gradient(to bottom, #fff 0%, #fff 100%); */
+    background:#fff;
 }
 
 .toggle-checkbox:checked + .toggle-switch {
-    background: var(--lils);
+    background: #d5c2f0;
+   
 }
 
 .toggle-checkbox:checked + .toggle-switch:before {
