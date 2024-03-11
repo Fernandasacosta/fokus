@@ -120,7 +120,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .app__card-timer {
-    color: var(--color-secondary);
+    color: black;
     text-align: center;
     font-family: "Poppins";
     font-size: 12rem;
